@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Embedding B2S DS17</title>
+    <!-- // the 3 lines below were copied from the Tableau website samples basic embed -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>My Embedded Webpage</h1>
+    <hr />
+    <div>
+      <!-- the back slash above makes a line -->
+      <button id="exportPDF">Export to PDF</button>
+      <!-- add id to the button so you can add it to the app.js file -->
+      <!-- //div is where our container with the viz will be on the page. Give an ID so it knows -->
+      <button id="exportExcel">Export to Excel</button>
+    </div>
+    <div>
+      <button id="ShowHideViz">Hide Viz</button>
+    </div>
+
+    <hr />
+
+    <input type="number" id="minValue" placeholder="Minimum Value" />
+    <input type="number" id="maxValue" placeholder="Maximum Value" />
+    <button id="applyFilter">Apply Filter</button>
+
+    <div id="vizContainer"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
